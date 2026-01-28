@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Cyber Courses</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Tahoma}
+body{background:#020617;color:#fff}
+:root{--blue:#2563eb}
+
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(30px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+header{
+background:linear-gradient(135deg,#020617,#020b2a);
+padding:20px;animation:fadeUp 1s
+}
+
+nav{display:flex;justify-content:space-between;align-items:center}
+nav h1{color:var(--blue)}
+nav a{color:#fff;text-decoration:none;margin-right:15px}
+nav a:hover{color:var(--blue)}
+
+.hero{text-align:center;padding:70px 20px}
+.hero span{color:var(--blue)}
+
+.container{width:90%;max-width:1100px;margin:auto}
+
+.courses{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;padding:40px 0
+}
+
+.card{
+background:#020617;
+padding:20px;
+border-radius:14px;
+transition:.4s;
+animation:fadeUp 1.2s
+}
+.card:hover{transform:scale(1.05)}
+.card img{width:100%;border-radius:10px}
+.card h3{color:var(--blue);margin-top:10px}
+.card p{color:#32c452;font-size:14px;margin:10px 0}
+.price{font-size:18px;margin-bottom:10px}
+
+button{
+width:100%;
+padding:10px;
+border:none;
+border-radius:8px;
+background:var(--blue);
+color:#fff;
+cursor:pointer
+}
+button:hover{background:#1d4ed8}
+
+/* contact */
+.contact{
+background:#020b2a;
+padding:50px 20px;
+margin-top:40px;
+animation:fadeUp 1.5s
+}
+.contact h2{text-align:center;margin-bottom:20px;color:var(--blue)}
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px
+}
+input,textarea{
+padding:10px;
+border-radius:8px;
+border:none;
+outline:none
+}
+
+.social{
+text-align:center;
+margin-top:20px
+}
+.social a{
+display:inline-block;
+margin:10px;
+padding:10px 20px;
+border-radius:8px;
+color:#fff;
+text-decoration:none
+}
+.whatsapp{background:#25D366}
+.telegram{background:#229ED9}
+
+footer{text-align:center;padding:20px;color:#64748b}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="container">
+<h1>CyberCourses</h1>
+<div>
+<a href="#">الرئيسية</a>
+<a href="#">الكورسات</a>
+<a href="#contact">تواصل</a>
+</div>
+</nav>
+</header>
+
+<section class="hero">
+<h2>تعلم <span>الأمن السيبراني</span> باحتراف</h2>
+<p>كورسات عملية في الاختراق والحماية</p>
+</section>
+
+<section class="container courses">
+
+<div class="card">
+<img src="اختبار الاختراق.jpg" width="200" height="250">
+<h3>اختبار الاختراق</h3>
+<p>Pentesting من الصفر</p>
+<div class="price">$49</div>
+<button onclick="window.open('https://wa.me/967770880890')">اشترك الآن</button>
+</div>
+
+<div class="card">
+<img src="حماية الانظمة والشبكات.jfif" width="200" height="250">
+<h3>الأمن السيبراني</h3>
+<p>حماية الشبكات والأنظمة</p>
+<div class="price">$59</div>
+<button onclick="window.open('https://wa.me/967770880890')">اشترك الآن</button>
+</div>
+
+<div class="card">
+<img src="pen_testing5_ar.jpg" width="200" height="250">
+<h3>Python للأمن</h3>
+<p>أتمتة واختبار اختراق</p>
+<div class="price">$39</div>
+<button onclick="window.open('https://wa.me/967770880890')">اشترك الآن</button>
+</div>
+
+<!-- الكورسات الجديدة -->
+<div class="card">
+<img src="Linux.png" width="200" height="250">
+<h3>Linux للأمن السيبراني</h3>
+<p>لينكس من الصفر حتى الاحتراف</p>
+<div class="price">$29</div>
+<button onclick="window.open('https://wa.me/967770880890')">اشترك الآن</button>
+</div>
+
+<div class="card">
+<img src="Network Security.png" width="200" height="250">
+<h3>Network Security</h3>
+<p>أمن الشبكات عمليًا</p>
+<div class="price">$45</div>
+<button onclick="window.open('https://wa.me/967770880890')">اشترك الآن</button>
+</div>
+
+<div class="card">
+<img src="Bug-Bounty.webp" width="200" height="250">
+<h3>Bug Bounty</h3>
+<p>اكتشاف الثغرات وربح المال</p>
+<div class="price">$69</div>
+<button onclick="window.open('https://wa.me/967770880890')">اشترك الآن</button>
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+<h2>تواصل معنا / التسجيل</h2>
+
+<form>
+<input type="text" placeholder="الاسم الكامل">
+<input type="email" placeholder="البريد الإلكتروني">
+<textarea rows="4" placeholder="رسالتك"></textarea>
+<button type="submit">إرسال</button>
+</form>
+
+<div class="social">
+<a class="whatsapp" href="https://wa.me/967770880890" target="_blank">واتس آب</a>
+<a class="telegram" href="https://t.me/Luffy711" target="_blank">تيليجرام</a>
+</div>
+</section>
+
+<footer>© 2026 CyberCourses</footer>
+
+</body>
+</html>
